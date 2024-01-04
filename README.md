@@ -1,29 +1,33 @@
 # DjangoBankingSystem
 
 ## Description
-This repository contains a Django-based backend system for a banking application. The project demonstrates the use of Django's powerful features to implement user authentication, profile management, and core banking model functionalities.
-
-## Key Features
-- User authentication system including registration, login, and logout.
-- Profile view and edit capabilities.
-- Implementation of a `Bank` model to represent bank details.
+This repository hosts a Django-based backend for a banking application, organized into modular apps for different functionalities, such as `accounts` and `banks`. It is designed to handle user authentication, account management, and banking operations.
 
 ## Project Structure
-- `forms.py`: Defines Django forms for user registration and authentication.
-- `urls.py`: URL configurations for the banking application.
-- `views.py`: Views for handling user registration, login, profile view, and edit.
-- `apps.py`: Django app configuration for the banking system.
-- `models.py`: Django models, including the `Bank` model with fields like bank ID, name, description, and owner.
+- `accounts/`: Contains user-related functionalities like registration, login, and profile management.
+- `banks/`: Manages bank-related operations and models.
+- `general/`: General components used across the application.
+- `mysite/`: The main Django project directory with global settings.
+- `.gitignore`: Specifies untracked files to ignore.
+- `LICENSE`: The license file for the project.
+- `Makefile`: A script for automating common administrative tasks.
+- `README.md`: Documentation of the project (this file).
+- `db.sqlite3`: The SQLite database file.
+- `manage.py`: A command-line utility for administrative tasks.
 
 ## How to Run
-[Provide instructions on how to set up and run the Django project, including any necessary commands for running the server, migrating the database, etc.]
+1. Ensure that you have Python and Django installed on your system.
+2. Navigate to the project's root directory.
+3. Run the following commands to set up the application:
+4. To start the development server, execute:
+5. Access the application through `localhost:8000` in your web browser.
 
 ## Technologies Used
 - Django
 - Python
 
 ## Learning Outcomes
-This project enhanced my understanding of Django's robust backend capabilities, including user authentication, form handling, URL routing, view management, and model creation. It also provided practical experience in implementing real-world banking system features.
+This project provided hands-on experience with Django's MVC framework for building a feature-rich banking system backend. It involved implementing models, views, and controllers for user and bank management, as well as integrating user authentication and session handling.
 
 ## Acknowledgments
-This project was developed as part of CSC309-Programming on the Web. Special thanks to Jack Sun for guidance and support.
+This project was developed as part of CSC309-Programming on Web. Special thanks to Instructor Jack Sun for guidance and support.
