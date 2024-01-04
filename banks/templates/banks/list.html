@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>All Banks List</title>
+</head>
+<body>
+    <h1>All Banks List</h1>
+    <ul>
+        {% for bank in banks %}
+            <li>ID: {{ bank.id }}, Name: {{ bank.name }}</li>
+        {% empty %}
+            <li>No banks available.</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

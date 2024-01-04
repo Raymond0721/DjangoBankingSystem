@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Branch</title>
+</head>
+<body>
+    <h1>Branch</h1>
+    <ul>
+        {% for branch in branches %}
+            <li>{{ branch.name }}</li>
+        {% empty %}
+            <li>No branches available.</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
