@@ -19,8 +19,10 @@ This repository hosts a Django-based backend for a banking application, organize
 1. Ensure that you have Python and Django installed on your system.
 2. Navigate to the project's root directory.
 3. Run the following commands to set up the application:
-4. To start the development server, execute:
-5. Access the application through `localhost:8000` in your web browser.
+   `python manage.py makemigrations
+   python manage.py migrate`
+5. To start the development server, execute:
+6. Access the application through `localhost:8000` in your web browser.
 
 ## Technologies Used
 - Django
